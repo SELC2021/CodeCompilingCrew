@@ -30,11 +30,7 @@
             background-color: white;
         }
     </style>
-<form action="/action_page.php" method="get" name="myForm">
-    First name: <input type="text" name="fname"><br>
-    Last name: <input type="text" name="lname"><br>
-    <input type="button" onclick="formSubmit()" value="Submit">
-  </form>
+  
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -53,27 +49,129 @@
     <br>
 
     
-    <! -- this is where the form should go --> 
-    <input type="text" style="font-size: 12pt; height: 80px; width:280px; ">
+    
+     <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #ffffff;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        <body>
+        
+        <form action="/action_page.php">
+          <div class="container">
+           <center> <h1> CyTeach Sign Up </h1> </center>
+            <br>
+
+           <center> <p>Please fill in this form to create an account.</p> </center>
+            <hr>
+        
+            <label for="firstname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter Your First Name" name="firstname" required>
+        
+            <label for="lastname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Your Last Name" name="lastname" required>
+        
+            <label for="email"><b>ISU Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+                <br>
+                <br>
+              </div>
+
+
+
+              <! -- Right here add the inputs for the class, teacher, etc -- >
+            <p>By filling in this data you agree to providing appropriate information. All negative information will be deleted.</p>
+        
+            <div class="clearfix">
+            <button type="submit" class="signupbtn">Submit</button> 
+            </div>
+          </div>
+        </form>
 
 
 
 
 
-  <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-    <br>
-    <input type="button" onclick="formSubmit()" value="Submit">
-  </div>
+
 </br>
 </body>
 
