@@ -21,8 +21,8 @@
 
     
     </style>
-    <center style="Color:#000000;"><font size=+2>For Rating teachers here at Iowa State</font></center>
-    <center style="Color:#000000;"><font size=+2>Where you're free to share your thoughts on teachers  and rate them 1 through 5 stars based on their ability to teach</font></center>
+    <center style="Color:#000000;"><font size=+2>Rate Teachers, and the classes they teach here at ISU</font></center>
+    <center style="Color:#000000;"><font size=+2>Share thoughts and rate 1-5 stars based on the class being taught!</font></center>
     <script src="index.js"> </script>
 <head>
     <style>
@@ -33,7 +33,7 @@
 <form action="/action_page.php" method="get" name="myForm">
     First name: <input type="text" name="fname"><br>
     Last name: <input type="text" name="lname"><br>
-    <input type="button" onclick="formSubmit()" value="Sumbit">
+    <input type="button" onclick="formSubmit()" value="Submit">
   </form>
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span>
@@ -50,7 +50,7 @@
 </head>
 
 <body>
-    
+    <br>
   <div class="rate">
     <input type="radio" id="star5" name="rate" value="5" />
     <label for="star5" title="text">5 stars</label>
@@ -64,6 +64,7 @@
     <label for="star1" title="text">1 star</label>
     <input type="button" onclick="formSubmit()" value="Submit">
   </div>
+</br>
 </body>
 
 </html>
