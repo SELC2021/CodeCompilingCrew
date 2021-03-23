@@ -12,4 +12,14 @@ font-family: sans-serif;
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, #FFF200, #CC3000)
+
+
+
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right) #FFF200, #CC3000;
 }
