@@ -136,7 +136,7 @@
             <script>
               function SubForm (){
                 $.ajax({
-                  url:"https://api.apispreadsheets.com/data/10375/",
+                  url:"https://api.apispreadsheets.com/data/10398/",
                   type:"post",
                   data:$("#myForm").serializeArray(),
                   success: function(){
@@ -161,6 +161,9 @@
           
               <label for="email"><b>ISU Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="isunumber"><b>ISU Net ID</b></label>
+              <input type="text" placeholder="Enter Your ISU NET ID" name="isunumber" required>
               
             </form>
           
